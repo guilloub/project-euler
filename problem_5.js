@@ -16,4 +16,7 @@ function problem5(max) {
     }
 }
 
+var startDate = Date.now();
 problem5(20);
+var millis = Date.now() - startDate;
+console.log("seconds elapsed = " + millis + "ms");

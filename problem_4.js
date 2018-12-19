@@ -29,8 +29,6 @@ function exo4(max) {
     console.log(max);
 }
 
-// result = exo4(999);
-
 function exo4Bis(max) {
     var palidroms = [];
     for (var a = max; a > max/10; a--) {
@@ -51,4 +49,7 @@ function exo4Bis(max) {
     console.log(max);
 }
 
+var startDate = Date.now();
 result = exo4Bis(999);
+var millis = Date.now() - startDate;
+console.log("seconds elapsed = " + millis + "ms");
