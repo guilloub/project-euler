@@ -1,16 +1,8 @@
-function nextIfEven(n) {
-    return n/2;
-}
-
-function nextIfOdd(n) {
-    return (n * 3) + 1;
-}
-
 function findNext(n) {
-    if (n%2 === 0) {
-        return nextIfEven(n);
+    if (n % 2 === 0) {
+        return n / 2;
     } else {
-        return nextIfOdd(n);
+        return (n * 3) + 1;
     }
 }
 
@@ -20,9 +12,6 @@ function computeSequence(n) {
     while(n > 1) {
         n = findNext(n);
         nbElement++;
-        if (nbElement%1000 === 0) {
-            console.log("startingNumber: " + startingNumber + " =>" + nbElement + "th element")
-        }
     }
     return nbElement;
 }
@@ -40,7 +29,7 @@ function problem(max) {
         }
     }
 
-    console.log("startingNumberMax: " + startingNumberMax + " =>" + nbElementMax + " elements")
+    console.log("startingNumberMax: " + startingNumberMax + " => " + nbElementMax + " elements")
 }
 
 var startDate = Date.now();
